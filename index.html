@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap home-work || N1</title>
+    <link rel="stylesheet" href="./various/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="text-center p-4">Movies catalog</h1>
+        <div class="row">
+          <div class="col-4">
+            <div class="top-header">
+              <div class="input-group flex-nowrap">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="ave"
+                  aria-label="ave"
+                />
+              </div>
+              <div class="input-group flex-nowrap my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="5"
+                  aria-label="Username"
+                />
+              </div>
+              <div class="input-group">
+                <select class="form-select" aria-label="All exatlfy compaines">
+                  <option selected>All</option>
+                  <option value="1">Marvel</option>
+                  <option value="2">Asos</option>
+                  <option value="3">Milky Madia</option>
+                </select>
+              </div>
+              <input
+                class="form-control my-3"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Rating (high to low)"
+              />
+              <datalist id="datalistOptions">
+                <option value="San Francisco"></option>
+                <option value="New York"></option>
+                <option value="Seattle"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+              </datalist>
+
+              <button
+                type="button"
+                class="btn btn-primary text-center w-100 fs-5 mb-5"
+              >
+                Search
+              </button>
+            </div>
+            <div class="bottom-header">
+              <h2>Bookmarked movies</h2>
+              <ul class="list-group">
+                <li class="list-group-item text-capitalize px-3 fw-bold">
+                  Avengars: Infintiy War
+                  <button type="button" class="btn btn-danger d-block my-2">
+                    Remove
+                  </button>
+                </li>
+                <li class="list-group-item text-capitalize px-3 fw-bold">
+                  The Avengars
+                  <button type="button" class="btn btn-danger d-block my-2">
+                    Remove
+                  </button>
+                </li>
+                <li class="list-group-item text-capitalize px-3 fw-bold">
+                  12 Years a Slave
+                  <button type="button" class="btn btn-danger d-block my-2">
+                    Remove
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="section-main ms-4">
+              <h3>Search result: 39</h3>
+              <div class="alert alert-success fw-bold my-3" role="alert">
+                Use the form on the left to search for a movie
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="card ms-4">
+                    <img src="./images/marvels.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title ms-2">Avengars Infintiy</h5>
+                        <div class="d-flex ms-2">
+                            <img src="./images/calendar-event-fill.svg" alt="calendar" class="me-2">
+                            <span>2018</span>
+                        </div>
+                        <div class="d-flex my-3 ms-2">
+                            <img src="./images/star-fill.svg" alt="calendar" class="me-2">
+                            <span>8.7</span>
+                        </div>
+                      <div class="buttons d-flex align-items-center justify-content-between m-2 mx-3">
+                        <a type="button" class="btn btn-outline-primary">Watch trailer</a>
+                        <a type="button" class="btn btn-outline-info">More info</a>
+                        <a type="button" class="btn btn-outline-success">Bookmark</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="card ms-4">
+                    <img src="./images/marvels.jpg" class="card-img-top" alt="..."> 
+                    <div class="card-body">
+                        <h5 class="card-title ms-2">The Avengars</h5>
+                          <div class="d-flex ms-2">
+                              <img src="./images/calendar-event-fill.svg" alt="calendar" class="me-2">
+                              <span>2018</span>
+                          </div>
+                          <div class="d-flex my-3 ms-2">
+                              <img src="./images/star-fill.svg" alt="calendar" class="me-2">
+                              <span>8.7</span>
+                          </div>
+                        <div class="buttons d-flex align-items-center justify-content-between m-2 mx-3">
+                          <a type="button" class="btn btn-outline-primary">Watch trailer</a>
+                          <a type="button" class="btn btn-outline-info">More info</a>
+                          <a type="button" class="btn btn-outline-success">Bookmark</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center mt-5">
+                <ul class="pagination pagination-md mt-4">
+                    <li class="page-item active" aria-current="page">
+                      <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
